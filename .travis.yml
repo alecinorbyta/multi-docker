@@ -21,4 +21,3 @@ after_success:
   - docker push alecin/multi-nginx
   - docker push alecin/multi-server
   - docker push alecin/multi-worker
-  
