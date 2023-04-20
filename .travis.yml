@@ -14,3 +14,10 @@ after_success:
   - docker build -t alecin/multi-nginx ./nginx
   - docker build -t alecin/multi-server ./server
   - docker build -t alecin/multi-worker ./worker
+  #log into the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to docker hub
+  - docker push alecin/multi-client
+  - docker push alecin/multi-nginx
+  - docker push alecin/multi-server
+  - docker push alecin/multi-worker
