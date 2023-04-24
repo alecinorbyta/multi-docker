@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            PORCODDIO CANE LURIDO BASTARDO
+            PORCODDIO CANE LURIDO BASTARDO SCHIFOSO
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
